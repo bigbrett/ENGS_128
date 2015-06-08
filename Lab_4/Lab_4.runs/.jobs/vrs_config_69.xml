@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fir_compiler_0_synth_1" LaunchDir="P:/15spring/engs128/workspace/Brett_and_Matt/lab_workspace/Lab_4/Lab_4.runs/fir_compiler_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_compiler_0_synth_1" LaunchDir="P:/15spring/engs128/workspace/Brett_and_Matt/lab_workspace/Lab_4/Lab_4.runs/dds_compiler_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="P:/15spring/engs128/workspace/Brett_and_Matt/lab_workspace/Lab_4/Lab_4.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fir_compiler_0_synth_1"/>
+		<Parent Id="dds_compiler_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="P:/15spring/engs128/workspace/Brett_and_Matt/lab_workspace/Lab_4/Lab_4.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+	</Run>
+</Runs>
+

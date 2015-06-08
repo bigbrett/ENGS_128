@@ -1,0 +1,69 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Fri Apr 17 15:24:28 2015
+| Host         : M210-23 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file lab1top_control_sets_placed.rpt
+| Design       : lab1top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    16 |
+| Minimum Number of register sites lost to control set restrictions |    54 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |           14 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              42 |           13 |
+| Yes          | No                    | No                     |              63 |           18 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              23 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                    Enable Signal                    |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | ModemReceiver/Transmitter/n_0_tx_ctr[3]_i_2         | ModemReceiver/Transmitter/tx_load                 |                1 |              4 |
+|  clk_IBUF_BUFG | ModemTransmitter/CharBuffer/n_0_curr_state[3]_i_1   |                                                   |                2 |              4 |
+|  clk_IBUF_BUFG | ModemTransmitter/Receiver/rx_shift                  | ModemTransmitter/Receiver/n_0_tick_ctr[9]_i_1     |                1 |              4 |
+|  clk_IBUF_BUFG | ModemTransmitter/CharBuffer/wr_ctr_enable           | ModemTransmitter/CharBuffer/n_0_wr_address[4]_i_1 |                2 |              5 |
+|  clk_IBUF_BUFG | ModemReceiver/Transmitter/n_0_tx_reg[7]_i_1         |                                                   |                2 |              8 |
+|  clk_IBUF_BUFG | ModemReceiver/IQ_Deserializer/n_0_tx_start_tick_i_1 |                                                   |                2 |              8 |
+|  clk_IBUF_BUFG | ModemTransmitter/CharBuffer/E[0]                    |                                                   |                1 |              8 |
+|  clk_IBUF_BUFG | ModemTransmitter/Receiver/rx_output                 |                                                   |                3 |              8 |
+|  clk_IBUF_BUFG | ModemTransmitter/Receiver/rx_shift                  |                                                   |                2 |              9 |
+|  clk_IBUF_BUFG | ModemTransmitter/CharBuffer/rd_ctr_enable           | ModemTransmitter/CharBuffer/rd_ctr_clear          |                2 |             10 |
+|  clk_IBUF_BUFG |                                                     | ModemTransmitter/Receiver/n_0_tick_ctr[9]_i_1     |                4 |             11 |
+|  clk_IBUF_BUFG |                                                     | SymbolClk/n_0_CDcount[0]_i_1                      |                4 |             13 |
+|  clk_IBUF_BUFG | ModemTransmitter/CharBuffer/wr_enable               |                                                   |                2 |             16 |
+|  clk_IBUF_BUFG |                                                     | Display/n_0_cdcount[0]_i_1                        |                5 |             18 |
+|  clk_IBUF_BUFG | SymbolClk/symbol_clk                                |                                                   |                6 |             18 |
+|  clk_IBUF_BUFG |                                                     |                                                   |               14 |             34 |
++----------------+-----------------------------------------------------+---------------------------------------------------+------------------+----------------+
+
+

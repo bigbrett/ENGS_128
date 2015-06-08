@@ -1,0 +1,1 @@
+-wto "d9d1823d5b324287b1ebd43190035178" --debug "typical" --relax -L "blk_mem_gen_v8_2" -L "xil_defaultlib" -L "xbip_utils_v3_0" -L "axi_utils_v2_0" -L "fir_compiler_v7_2" -L "secureip" --snapshot "debug_TB_behav" "xil_defaultlib.debug_TB" -log "elaborate.log" 
